@@ -1,0 +1,41 @@
+# === C++ / Executables ===
+# Loại bỏ các file thực thi và file tạm sau khi build
+a.out
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# === Xcode ===
+# Loại bỏ các file cài đặt cá nhân của Xcode, không nên đưa lên GitHub
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# === macOS ===
+# Loại bỏ file rác của hệ thống macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# === Thư mục Build & Bin ===
+# Đô nên giữ thư mục nhưng không đẩy file thực thi bên trong lên
+bin/*
+!bin/.gitkeep
+
+# === Logs & Temporary ===
+*.log
+*.tmp
